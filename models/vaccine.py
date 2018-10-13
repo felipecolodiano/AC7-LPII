@@ -1,7 +1,7 @@
 from .animals import Animal, Gato, Cachorro, Cavalo
 from ..Exceptions.exceptions import TipoVacinaInvalido
 
-class Vaccine():
+class Vaccine(object):
     def __init__(self,tipo,dose):
         self.tipo = tipo
         self.dose = dose
