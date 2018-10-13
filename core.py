@@ -1,6 +1,6 @@
-print('''
+entrada = int(input('''
 ############################################################  
-#  Bem-vindo(a) ao sistema da vacinação Impacta-Nozes      #
+#  Bem-vindo(a) ao sistema de Zoonozes de São Paulo        #
 #                                                          #
 #     Animais que poderão receber vacinas:                 #
 #        - Gato                                            #
@@ -14,4 +14,4 @@ print('''
 #                                                          #
 #               Digite 1 para iniciar                      #              
 ############################################################
-''')
+'''))
