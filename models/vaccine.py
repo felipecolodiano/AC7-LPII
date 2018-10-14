@@ -7,14 +7,18 @@ class Vaccine(object):
         self.dose = dose
 
     def vacinar(self):
-        #try:
-           # if Gato == 
         return "Vacinando de forma GENERICA"
 
 #vacina Gato 
 class Intra_muscular(Vaccine):
-    def vacinar(self):
-        return f'Vacina: {self.tipo}, Dose: {self.dose}ml'
+    def vacinar(self, animal, vacina):
+        try:
+            if animal == vacina:
+                raise f'Vacina: {self.tipo}, Dose: {self.dose}ml'
+            else:
+                return animal != vacina
+        except TipoVacinaInvalido as e:
+            print(e)
 
     def __str__(self):
         return "Aplicando..."
@@ -22,16 +26,28 @@ class Intra_muscular(Vaccine):
 
 #vacina Cachorro
 class Intra_venosa(Vaccine):
-    def vacinar(self):
-        return f'Vacina: {self.tipo}, Dose: {self.dose}ml'
+    def vacinar(self, animal, vacina):
+        try:
+            if animal == vacina:
+                raise f'Vacina: {self.tipo}, Dose: {self.dose}ml'
+            else:
+                return animal != vacina
+        except TipoVacinaInvalido as e:
+            print(e)
         
     def __str__(self):
         return "Aplicando..."
 
 #vacina Cavalo
 class Superficie(Vaccine):
-    def vacinar(self):
-        return f'Vacina: {self.tipo}, Dose: {self.dose}ml'
+    def vacinar(self, animal, vacina):
+        try:
+            if animal == vacina:
+                raise f'Vacina: {self.tipo}, Dose: {self.dose}ml'
+            else:
+                return animal != vacina
+        except TipoVacinaInvalido as e:
+            print(e)
 
     def __str__(self):
         return "Aplicando..."
